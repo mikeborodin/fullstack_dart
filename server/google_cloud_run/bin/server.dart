@@ -8,7 +8,9 @@ void main() async {
       )
       .addHandler(_echo);
 
-  var server = await serve(handler, 'localhost', 80);
+  final port = String.fromEnvironment('PORT', defaultValue: '8080');
+  print('will listen on the port $port');
+  var server = await serve(handler, '0.0.0.0', int.parse(port));
   server.autoCompress = true;
   print('Serving at http://${server.address.host}:${server.port}');
 }
