@@ -1,5 +1,5 @@
 # Fullstack Dart project
 
 Components:
-* client (Flutter app)
+* client (Flutter appu)
 * server (Google Cloud, Azure samples)
