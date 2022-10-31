@@ -1,1 +1,1 @@
-func azure functionapp publish mb-fullstack-dart-8
+func azure functionapp publish $1
